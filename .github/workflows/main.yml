@@ -44,13 +44,7 @@ jobs:
         max-attempts: 3
         retry-delay: 5s
         
-    - name: Verificando ANALYSIS_URI
-      uses: jtalk/url-health-check-action@v2
-      with:
-        url: ${{ env.URL_VERACODE_ANALYSIS_UI }}
-        follow-redirect: false
-        max-attempts: 3
-        retry-delay: 5s
+
         
     - name: Verificando ANALYSIS_LOGIN
       uses: jtalk/url-health-check-action@v2
