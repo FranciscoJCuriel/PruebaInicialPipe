@@ -25,6 +25,7 @@ jobs:
       SONAR_TOKEN : '6701540e6f9e9f039ba8038f8f46bd2b2ad6bd58'
       SONAR_USUARIO: 'test_ejecutor'
       SONAR_PASS: 'test_ejecutor'
+      URL_VERACODE1: 'https://analysiscenter.veracode.com'
       
   steps:     
     - uses: actions/checkout@v2
@@ -34,7 +35,7 @@ jobs:
     - name: who-am-i action
       uses: jtalk/url-health-check-action@v2
       with:
-        url: ${{ env.URL_SONAR_WAS }}
+        url: ${{ env.URL_VERACODE1 }}
         follow-redirect: false
         max-attempts: 3
         retry-delay: 5s
