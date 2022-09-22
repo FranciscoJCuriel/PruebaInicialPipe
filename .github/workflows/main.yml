@@ -32,4 +32,5 @@ jobs:
       # Finally, run our tests
       - name: Run the tests
         run: npm test
+        working-directory: react-router-arquetipo
         
