@@ -27,7 +27,7 @@ jobs:
       # Install required deps for action
       - name: Install Dependencies
         run: npm install
-        working-directory: client
+        working-directory: react-router-arquetipo
 
       # Finally, run our tests
       - name: Run the tests
